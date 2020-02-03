@@ -1,0 +1,123 @@
+
+.progress {
+  display: flex;
+  margin-bottom: 70px;
+  .progress-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 50px;
+    margin-right: 30px;
+    @media (max-width: 1200px) {
+      font-size: 35px;
+    }
+  }
+  .progress-bar {
+    height: 600px;
+    width: 100px;
+    background-color: #6FF48D;
+    position: relative;
+    @media (max-width: 1200px) {
+      width: 65px;
+      height: 350px;
+    }
+    .value {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #FA6868;
+      .value-tag {
+        position: relative;
+        cursor: pointer;
+        .div {
+          position: absolute;
+          background-color: #2A434F;
+          font-size: 39px;
+          min-width: 103px;
+          user-select: none;
+          span {
+            width: 100%;
+            text-align: center;
+          }
+          @media (max-width: 1200px) {
+            font-size: 25px;
+            min-width: 72px;
+          }
+          padding-right: 15px;
+          z-index: 2;
+          display: flex;
+          align-items: center;
+          left: 30px;
+          top: -30px;
+          @media (max-width: 1200px) {
+            left: 20px;
+            top: -20px;
+          }
+
+          border-top-right-radius:  10px;
+          border-bottom-right-radius:  10px;
+          .arrow {
+            // position: absolute;
+            height: 0;
+            margin-left: -60px;
+            width: 0;
+            border-right: 30px solid #2A434F;
+            border-left: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-top: 30px solid transparent;
+            
+            @media (max-width: 1200px) {
+              margin-left: -40px;
+              border-right: 20px solid #2A434F;
+              border-left: 20px solid transparent;
+              border-bottom: 20px solid transparent;
+              border-top: 20px solid transparent;
+            }
+          }          
+        }
+      }
+    }
+
+  }
+}
+
+.bet-amount {
+  display: flex;
+  width: 100%;
+  .value {
+    flex-grow: 1;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 10px;
+    background-color: #0A1A33;
+    .label {
+      color: #80A2CC;
+      margin-bottom: 5px;
+    }
+    .amount {
+      font-weight: 600;
+      svg {
+        color: #FEC41C;
+        margin-right: 10px;
+      }
+    }
+
+  }
+  .sub-tag {
+    background-color: #275E9A;
+    width: 58px;
+    min-width: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  .right-tag {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border-left: solid 1px gray;
+
+  }
+}
